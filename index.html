@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website 1 Halaman</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section {
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="sectionNPM">
+      <h2>NPM</h2>
+      <input type="text" id="inputNPM" placeholder="Masukkan teks" />
+      <button onclick="updateText('sectionNPM', 'inputNPM')">Update Text</button>
+      <p id="text1">22081010114</p>
+    </section>
+
+    <script>
+      function updateText(sectionId, inputId) {
+        var section = document.getElementById(sectionId);
+        var input = document.getElementById(inputId);
+        var textElement = section.querySelector("p");
+
+        textElement.textContent = input.value;
+      }
+    </script>
+  </body>
 </html>

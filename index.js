@@ -1,8 +1,12 @@
-const update = function() {
-    let hobby = document.getElementById('hobby');
-    let inputHobby = document.getElementById('input-hobby');
+let button = document.getElementById('button-hobby')
 
-    hobby.innerHTML = inputHobby.value;
+button.addEventListener('click', ()=> {
+    let hobby = document.getElementById('hobby')
+    let inputHobby = document.getElementById('input-hobby')
+
+    if (inputHobby.value !== '') {
+        hobby.innerHTML = inputHobby.value;
+    }
     
-    inputHobby.value = '';
-};
+    inputHobby.value = ''
+})

@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Program Studi</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2 - FSW 2 Tim 3</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="section-age">
+        <div>
+            <label class="text-age">Umur</label>
+            <label class="colon-age">:</label>
+            <label for="input-age" id="age">17</label>
+        </div>
+        <div>
+            <input type="number" min="1" id="input-age">
+            <button type="btn" id="btn-age">Update</button>
+            <p id="error-age"></p>
+        </div>
+    </section>
+    <div class="container">
             <label for="prodiName">Nama Program Studi:</label>
             <input type="text" id="prodiName" placeholder="Masukkan nama program studi">
             
@@ -17,9 +30,11 @@
             <button class="btn" onclick="submitProdi()">Submit Program Studi</button>
     
             <div id="result"></div>
-        </div>
-    
-        <script>
+      </div>
+    <footer>
+        <script src="index.js"></script>
+    </footer>
+   <script>
             function submitProdi() {
                 const name = document.getElementById('prodiName').value;
                 const code = document.getElementById('prodiCode').value;
@@ -37,5 +52,5 @@
                 }
             }
         </script>
-    </body>
+</body>
 </html>

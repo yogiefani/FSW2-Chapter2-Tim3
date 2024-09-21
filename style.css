@@ -1,3 +1,17 @@
+
+#dark-mode{
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    /* padding: 20px; */
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 /* body {
     margin: 0;
     padding: 0;
@@ -10,14 +24,7 @@
     background-color: #D2E0FB;
 } */
 
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    /* padding: 20px; */
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+
 /* 
 h2 {
     color: #333;
@@ -66,3 +73,4 @@ input[type="text"] {
   gap: 10px;
   padding: 10px;
 } */
+

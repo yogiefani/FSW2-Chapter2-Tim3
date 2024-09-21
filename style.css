@@ -1,12 +1,66 @@
 body {
-    font-family: 'Poppins', system-ui, sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Poppins', system-ui, sans-serif;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     background-color: #D2E0FB;
 }
 
-.colon-age {
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #2898a7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #287ba7;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    display: none;
+  
+  .colon-age {
     margin-left: 75px;
 }
 
@@ -37,4 +91,5 @@ body {
 #error-age {
     font-weight: 300;
     margin: 0px 0px 0px 155px;
+
 }

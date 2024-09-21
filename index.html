@@ -8,30 +8,35 @@
   </head>
 
   <body>
-    
     <div class="container">
+      <div id="name-section"></div>
+      <div id="domisili"></div>
+      <div id="age-section">
         <label for="age">Umur:</label>
-      <input
-        type="text"
-        id="age"
-        placeholder="Masukkan umur"
-      />
-      <button type="btn" id="btn-age">Update</button>
-      <p id="error-age"></p>
-      <label for="prodiName">Nama Program Studi:</label>
-      <input
-        type="text"
-        id="prodiName"
-        placeholder="Masukkan nama program studi"
-      />
-
-      <label for="prodiCode">Kode Program Studi:</label>
-      <input
-        type="text"
-        id="prodiCode"
-        placeholder="Masukkan kode program studi"
-      />
-
+        <input type="text" id="age" placeholder="Masukkan umur" />
+        <button type="btn" id="btn-age">Update</button>
+        <p id="error-age"></p>
+      </div>
+      <div id="npm-section"></div>
+      <div id="university-section"></div>
+      <div id="prodi-section">
+        <label for="prodiName">Nama Program Studi:</label>
+        <input
+          type="text"
+          id="prodiName"
+          placeholder="Masukkan nama program studi"
+        />
+      </div>
+      <div id="prodi-code-section">
+        <label for="prodiCode">Kode Program Studi:</label>
+        <input
+          type="text"
+          id="prodiCode"
+          placeholder="Masukkan kode program studi"
+        />
+      </div>
+      <div id="semester-section"></div>
+      <div id="hobby-section"></div>
       <button class="btn" onclick="submitProdi()">Submit Program Studi</button>
 
       <div id="result"></div>

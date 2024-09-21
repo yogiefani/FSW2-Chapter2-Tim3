@@ -1,0 +1,40 @@
+body {
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #D2E0FB;
+}
+
+.colon-age {
+    margin-left: 75px;
+}
+
+#age {
+    margin-left: 24px;
+}
+
+#input-age { 
+    width: 170px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    margin: 8px 8px 8px 155px;
+}
+
+#btn-age {
+    font-size: 12px;
+    font-weight: 300;
+    width: 70px;
+    height: 20px;
+    color: #FFFFFF;
+    background-color: #5B8AFF;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+#error-age {
+    font-weight: 300;
+    margin: 0px 0px 0px 155px;
+}

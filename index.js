@@ -1,4 +1,3 @@
-
 // function submitProdi() {
 //   const name = document.getElementById("prodiName").value;
 //   const code = document.getElementById("prodiCode").value;
@@ -15,6 +14,7 @@
 //     resultDiv.style.borderColor = "#f5c6cb";
 //   }
 // }
+
 // Dark-Mode
 
 let body = document.getElementsByTagName("body");
@@ -23,27 +23,26 @@ let darkMode = document.getElementById("dark-mode");
 let isDarkMode = localStorage.getItem("isDarkMode") === "true";
 
 if (isDarkMode) {
-    darkMode.src = "./public/assets/moon.svg";
-    body[0].style.backgroundColor = "#021526";
+  darkMode.src = "./public/assets/moon.svg";
+  body[0].style.backgroundColor = "#021526";
 } else {
-    darkMode.src = "./public/assets/sun.svg";
-    body[0].style.backgroundColor = "white";
+  darkMode.src = "./public/assets/sun.svg";
+  body[0].style.backgroundColor = "white";
 }
 
 darkMode.addEventListener("click", () => {
-    isDarkMode = !isDarkMode;
+  isDarkMode = !isDarkMode;
 
-    if (isDarkMode) {
-        darkMode.src = "./public/assets/moon.svg";
-        body[0].style.backgroundColor = "#021526";
-    } else {
-        darkMode.src = "./public/assets/sun.svg";
-        body[0].style.backgroundColor = "white";
-    }
+  if (isDarkMode) {
+    darkMode.src = "./public/assets/moon.svg";
+    body[0].style.backgroundColor = "#021526";
+  } else {
+    darkMode.src = "./public/assets/sun.svg";
+    body[0].style.backgroundColor = "white";
+  }
 
-    localStorage.setItem("isDarkMode", isDarkMode);
+  localStorage.setItem("isDarkMode", isDarkMode);
 });
-
 
 function updateUniversity() {
   const university = document.getElementById("university-input").value;
@@ -84,3 +83,15 @@ function updateProdi() {
   }
 }
 
+function updateHobby() {
+  const hobby = document.getElementById("hobby-input").value;
+  const resultDiv = document.getElementById("hobby");
+  resultDiv.style.color = "#000";
+
+  if (hobby) {
+    resultDiv.innerHTML = `<strong>${hobby}</strong> `;
+  } else {
+    resultDiv.innerHTML = "Harap isi  kolom Hobi!";
+    resultDiv.style.color = "#FF0000";
+  }
+}

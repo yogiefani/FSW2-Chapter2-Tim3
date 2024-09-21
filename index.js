@@ -17,3 +17,32 @@ button.addEventListener('click', ()=> {
     
     inputHobby.value = '';
 })
+
+// Dark-Mode
+
+let body = document.getElementsByTagName("body");
+let darkMode = document.getElementById("dark-mode");
+
+let isDarkMode = localStorage.getItem("isDarkMode") === "true";
+
+if (isDarkMode) {
+    darkMode.src = "./public/assets/moon.svg";
+    body[0].style.backgroundColor = "#021526";
+} else {
+    darkMode.src = "./public/assets/sun.svg";
+    body[0].style.backgroundColor = "white";
+}
+
+darkMode.addEventListener("click", () => {
+    isDarkMode = !isDarkMode;
+
+    if (isDarkMode) {
+        darkMode.src = "./public/assets/moon.svg";
+        body[0].style.backgroundColor = "#021526";
+    } else {
+        darkMode.src = "./public/assets/sun.svg";
+        body[0].style.backgroundColor = "white";
+    }
+
+    localStorage.setItem("isDarkMode", isDarkMode);
+});

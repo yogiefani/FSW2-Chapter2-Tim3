@@ -40,3 +40,16 @@ function updateAge() {
     resultDiv.style.color = "#FF0000";
   }
 }
+
+function updateProdi() {
+  const prodi = document.getElementById("prodi-input").value;
+  const resultDiv = document.getElementById("prodi");
+  resultDiv.style.color = "#000";
+
+  if (prodi) {
+    resultDiv.innerHTML = `<strong>${prodi}</strong> `;
+  } else {
+    resultDiv.innerHTML = "Harap isi  kolom prodi!";
+    resultDiv.style.color = "#FF0000";
+  }
+}

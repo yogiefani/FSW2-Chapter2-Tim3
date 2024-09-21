@@ -1,17 +1,42 @@
-let button = document.getElementById('btn-age');
-let inputAge = document.getElementById('input-age');
-let errorAge = document.getElementById('error-age');
+// function submitProdi() {
+//   const name = document.getElementById("prodiName").value;
+//   const code = document.getElementById("prodiCode").value;
+//   const resultDiv = document.getElementById("result");
 
-button.addEventListener('click', () => {
-    let age = document.getElementById('age');
+//   if (name && code) {
+//     resultDiv.innerHTML = `<strong>Program Studi:</strong> ${name} <br> <strong>Kode:</strong> ${code}`;
+//     resultDiv.style.display = "block";
+//   } else {
+//     resultDiv.innerHTML = "Harap isikan semua kolom!";
+//     resultDiv.style.display = "block";
+//     resultDiv.style.backgroundColor = "#f8d7da";
+//     resultDiv.style.color = "#721c24";
+//     resultDiv.style.borderColor = "#f5c6cb";
+//   }
+// }
 
-    if (inputAge.value !== '') {
-        age.innerHTML = inputAge.value;
-        errorAge.innerHTML = '';
-    } else {
-        errorAge.innerHTML = "Input umur wajib diisi!";
-        errorAge.style.color = "red";
-    }
+function updateUniversity() {
+  const university = document.getElementById("university-input").value;
+  const resultDiv = document.getElementById("university");
+  resultDiv.style.color = "#000";
 
-    inputAge.value = '';
-})
+  if (university) {
+    resultDiv.innerHTML = `<strong>${university}</strong> `;
+  } else {
+    resultDiv.innerHTML = "Harap isi  kolom universitas!";
+    resultDiv.style.color = "#FF0000";
+  }
+}
+
+function updateAge() {
+  const age = document.getElementById("age-input").value;
+  const resultDiv = document.getElementById("age");
+  resultDiv.style.color = "#000";
+
+  if (age) {
+    resultDiv.innerHTML = `<strong>${age}</strong> `;
+  } else {
+    resultDiv.innerHTML = "Harap isi  kolom umur!";
+    resultDiv.style.color = "#FF0000";
+  }
+}

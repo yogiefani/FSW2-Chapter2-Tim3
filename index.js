@@ -108,3 +108,30 @@ function updateHobby() {
     resultDiv.style.color = "#FF0000";
   }
 }
+
+let navButton = document.getElementById("nav-button");
+let navBody = document.getElementsByClassName("nav-body")[0];
+
+let isNavbar = localStorage.getItem("isNavbar") === "true";
+
+if(isNavbar){
+    navButton.src = "./public/assets/Navbar opened.svg";
+    navBody.style.display = 'block';
+} else {
+    navButton.src = "./public/assets/navbar closed.svg";
+    navBody.style.display = 'none';
+}
+
+navButton.addEventListener("click", () => {
+    isNavbar = !isNavbar;
+
+    if(isNavbar){
+        navButton.src = "./public/assets/Navbar opened.svg";
+        navBody.style.display = 'block';
+    } else {
+        navButton.src = "./public/assets/navbar closed.svg";
+        navBody.style.display = 'none';
+    }
+
+    localStorage.setItem("isNavbar", isNavbar);
+})

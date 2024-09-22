@@ -109,6 +109,20 @@ function updateHobby() {
   }
 }
 
+
+function updateDomisili() {
+  const domisili = document.getElementById("domisili-input").value;
+  const resultDiv = document.getElementById("domisili");
+  resultDiv.style.color = "#000";
+
+  if (domisili) {
+    resultDiv.innerHTML = `<strong>${domisili}</strong> `;
+  } else {
+    resultDiv.innerHTML = "Harap isi  kolom domisili!";
+    resultDiv.style.color = "#FF0000";
+  }
+}
+
 let navButton = document.getElementById("nav-button");
 let navBody = document.getElementsByClassName("nav-body")[0];
 

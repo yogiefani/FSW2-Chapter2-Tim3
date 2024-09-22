@@ -13,6 +13,7 @@ Berikut adalah nama-nama anggota tim yang terlibat dalam proyek ini beserta link
 5. **[Muhammad Rafif Ramadhansyah](https://github.com/raaapiiip)**
 6. **[Irfan Muria](https://github.com/irpanzy)**
 7. **[Melinda Wijaya](https://github.com/melindawijaya)**
+8. **[Zainal Arifin Fadliansyah](https://github.com/zzainalAri)**
 
 ## 🎯 Tujuan Proyek
 Proyek ini bertujuan untuk:

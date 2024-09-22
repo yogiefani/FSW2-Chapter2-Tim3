@@ -70,6 +70,19 @@ function updateAge() {
   }
 }
 
+function updateNPM() {
+  const NPM = document.getElementById("NPM-input").value;
+  const resultDiv = document.getElementById("NPM");
+  resultDiv.style.color = "#000";
+
+  if (NPM) {
+    resultDiv.innerHTML = `<strong>${NPM}</strong> `;
+  } else {
+    resultDiv.innerHTML = "Harap isi  kolom umur!";
+    resultDiv.style.color = "#FF0000";
+  }
+}
+
 function updateProdi() {
   const prodi = document.getElementById("prodi-input").value;
   const resultDiv = document.getElementById("prodi");

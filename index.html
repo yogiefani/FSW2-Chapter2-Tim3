@@ -77,7 +77,29 @@
         </div>
 
         <!-- npm field -->
-        <div></div>
+        <div>
+          <div class="mt-3">
+            <div class="row">
+              <div class="col-2">
+                <label for="NPM">NPM</label>
+              </div>
+              <div class="col-1">
+                <p>:</p>
+              </div>
+              <div class="col-9"><p id="NPM">Lorem, ipsum dolor.</p></div>
+            </div>
+
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-7">
+                <input class="form-control" type="text" id="NPM-input" placeholder="Masukkan Universitas" />
+              </div>
+              <div class="col-2">
+                <button class="btn btn-primary" onclick="updateNPM()">Update</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- University field -->
         <div class="mt-3">
@@ -157,6 +179,7 @@
           <div class="row">
             <div class="col-3"></div>
             <div class="col-7">
+              
               <input
                 class="form-control"
                 type="text"

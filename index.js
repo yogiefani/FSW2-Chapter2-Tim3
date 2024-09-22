@@ -109,6 +109,19 @@ function updateHobby() {
   }
 }
 
+function updateName() {
+  const name = document.getElementById("name-input").value;
+  const resultDiv = document.getElementById("name");
+  resultDiv.style.color = "#000";
+
+  if (name) {
+    resultDiv.innerHTML = `<strong>${name}</strong> `;
+  } else {
+    resultDiv.innerHTML = "Harap isi  kolom Nama!";
+    resultDiv.style.color = "#FF0000";
+  }
+}
+
 let navButton = document.getElementById("nav-button");
 let navBody = document.getElementsByClassName("nav-body")[0];
 

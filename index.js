@@ -70,6 +70,19 @@ function updateAge() {
   }
 }
 
+function updateNPM() {
+  const NPM = document.getElementById("NPM-input").value;
+  const resultDiv = document.getElementById("NPM");
+  resultDiv.style.color = "#000";
+
+  if (NPM) {
+    resultDiv.innerHTML = `<strong>${NPM}</strong> `;
+  } else {
+    resultDiv.innerHTML = "Harap isi  kolom umur!";
+    resultDiv.style.color = "#FF0000";
+  }
+}
+
 function updateProdi() {
   const prodi = document.getElementById("prodi-input").value;
   const resultDiv = document.getElementById("prodi");
@@ -96,6 +109,7 @@ function updateHobby() {
   }
 }
 
+
 function updateDomisili() {
   const domisili = document.getElementById("domisili-input").value;
   const resultDiv = document.getElementById("domisili");
@@ -108,3 +122,30 @@ function updateDomisili() {
     resultDiv.style.color = "#FF0000";
   }
 }
+
+let navButton = document.getElementById("nav-button");
+let navBody = document.getElementsByClassName("nav-body")[0];
+
+let isNavbar = localStorage.getItem("isNavbar") === "true";
+
+if(isNavbar){
+    navButton.src = "./public/assets/Navbar opened.svg";
+    navBody.style.display = 'block';
+} else {
+    navButton.src = "./public/assets/navbar closed.svg";
+    navBody.style.display = 'none';
+}
+
+navButton.addEventListener("click", () => {
+    isNavbar = !isNavbar;
+
+    if(isNavbar){
+        navButton.src = "./public/assets/Navbar opened.svg";
+        navBody.style.display = 'block';
+    } else {
+        navButton.src = "./public/assets/navbar closed.svg";
+        navBody.style.display = 'none';
+    }
+
+    localStorage.setItem("isNavbar", isNavbar);
+})
